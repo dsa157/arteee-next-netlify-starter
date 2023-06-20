@@ -5,7 +5,9 @@ import Settings from '@components/Settings'
 import Generate from '@components/Generate'
 import Favorites from '@components/Favorites'
 import Location from '@components/Location'
+import LoginForm from '@components/LoginForm'
 import styles from 'components/UI.module.css'
+import Link from 'next/link';
 
 
 export default function Home() {
@@ -22,13 +24,17 @@ export default function Home() {
           Welcome to Arteee        
         </p>
         <div>
-          <img src="arteee-logo.png" className={styles.arteeeLogo} />
+          <img src="arteee-logo.jpg" className={styles.arteeeLogo} />
         </div>
         <div>
+
+        <h1 className="title">
+          Read <Link href="/settings">settings!</Link>
+        </h1>
         <Generate />
         <Location />
         <Favorites />
-        <Settings />
+        <Link href="/settings"><Settings /></Link>
         </div>
       </main>
 
