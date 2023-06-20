@@ -29,12 +29,12 @@ export default function Home() {
         <div>
 
         <h1 className="title">
-          Read <Link href="/settings">settings!</Link>
+        <Link href="/generate"><img src="/microphone.svg" alt="Generate" className={styles.moduleButton} /></Link>
+        <Link href="/location"><img src="/map-pin.svg" alt="Location" className={styles.moduleButton} /></Link>
+        <Link href="/favorites"><img src="/heart.svg" alt="Favorites" className={styles.moduleButton} /></Link>
+        <Link href="/communityFavorites"><img src="/community.svg" alt="Community Favorites" className={styles.moduleButton} /></Link>
+        <Link href="/settings"><img src="/settings.svg" alt="Settings" className={styles.moduleButton} /></Link>
         </h1>
-        <Generate />
-        <Location />
-        <Favorites />
-        <Link href="/settings"><Settings /></Link>
         </div>
       </main>
 

@@ -1,7 +1,16 @@
   .moduleButton {
-    height: 3em;
+    height: 1em;
     margin: 5px;
-    border-width: 0;
+    border-width: 1px;
+    border-color: black;
+  }
+
+  .formButton {
+    height: 2em;
+    width: 5em;
+    margin: 5px;
+    border-width: 1px;
+    border-color: black;
   }
 
   .arteeeLogo {

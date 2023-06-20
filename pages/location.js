@@ -1,10 +1,10 @@
 import Link from "next/link";
 import styles from 'components/UI.module.css'
 
-export default function GeneratePage() {
+export default function LocationPage() {
     return <div className="container">
       <Link href="/"><span><img className={styles.moduleButton} src="back.svg" /> Back</span></Link> 
-      <h1>Generate</h1>
+      <h1>Location</h1>
       <form action="/send-data-here" method="post">
       <div>
       <label for="prompt">Image Prompt:</label>
